@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="dark.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow&family=Be+Vietnam+Pro:wght@200&family=
+Courgette&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@600&family=Genos&family=Jost:wght@100;400&family=
+Lobster&family=Merriweather+Sans:wght@300&family=Open+Sans:wght@300;400&family=Quicksand&family=Righteous&family=
+Work+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="body">
+    <div class="darkmode" onclick="modeDark()">
+        <input type="checkbox" id="dark" class="inputdark">
+        <label for="dark" class="dark">
+            <img src="moon(3).png" alt="" class="moon">
+            <img src="sun(1).png" alt="">
+            <div class="ball"></div>
+        </label>
+    </div>
+
+    <main class="login glass" id="login">
+       
+        <img src="profile.png" alt="" class="default" id="defaultpic">
+        <label for="inputfile"><img src="3687416.png" alt="" class="choose"></label>
+        <input type="file" accept="image/png , image/jpeg , image/jpg" id="inputfile" onchange="upload(this.files)">
+        <div class="typename">
+
+            <input type=" text" id="username" class="username">
+            <input type="text" class="roomname" id="roomname">
+            <span>
+                <select name="" id="suggestion" class="available">
+                    <option value="">global🌐</option>
+                    <option value="">find love💕</option>
+                    <option value="">family👨‍👩‍👧</option>
+                    <option value="">party🤡</option>
+                </select>
+                <button class="join joincolor" id="join" onclick="join()">join</button>
+            </span>
+            <button id="submit" class="submit submitcolor" onclick="submit()">submit</button>
+        </div>
+
+    </main>
+
+    <main class="chat" id=chat>
+
+        <div class="room glass">
+            <div class="identity">
+                <img src="profile.png" alt="" class="defaultpic" id="default-pic">
+                <p id="nameuser" class="nameuser"></p>
+                <div class="room-in" id="room-in">
+
+                    <p id="actual-room" class="actual-room"></p>
+                </div>
+
+                <div class="userlist" id="userlist">
+                    <h3>users members</h3>
+                    <p id="name" class="name"></p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="chatbox glass" id="chatbox" onclick="">
+          
+            <div id="disconnect">
+
+            </div>
+
+            <div class="messagebox" id="messagebox"></div>
+
+            <div class="input">
+
+                <input type="text" id="texto" class="texto">
+                <img src="image_processing20210912-1047-lu7st9.png" alt="" onclick="send()">
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script src="profil.js"></script>
+    <script src="emoji.js"></script>
+    <script src="dark.js"></script>
+</body>
+
+</html>

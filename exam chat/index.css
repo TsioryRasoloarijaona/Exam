@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Genos', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    
+    background-image: url('tree-736885_1280.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.username{
+    font-size: 20px;
+}
+
+.login>input{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(14, 14, 14,0.3);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: black;
+   
+}
+
+.roomname{
+    width: 40%;
+    height: 40px;
+    background-color: rgb(14, 14, 14,0.6);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: black;
+    margin-bottom: 3%;
+}
+
+
+
+
+.chatshow{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+     width: 88vw;
+    height: 95vh;
+    margin: 2.5vh auto;
+}.chat{display: none;}
+
+.room{
+    width:30% ;
+    margin-right: 20px;
+   
+ 
+}
+
+.defaultpic{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 2.5%;
+    
+}
+
+.nameuser{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.choice{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+
+.room-in{
+    text-align: center;
+    color: white;
+    margin-top: 4%;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.actual-room{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(20, 110, 200) ;
+    padding: 10px 3%;
+    width: fit-content;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 4%;
+    font-size: 20px;
+}
+
+
+.roomlist{
+    width: 90%;
+   
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.chatbox{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h2{
+    margin-left: 15px;
+    margin-right: 8px;
+}
+
+
+
+
+
+#disconnect>p{
+  margin-top: 4%;
+   margin-left: 2.5%;
+    color: white;
+    background-color: rgb(8, 8, 8,0.3);
+    width:fit-content;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#logout{
+    
+    padding: 3px 7px;
+    border:none;
+    margin-left: 3px;
+    color: white;
+    background-color: rgb(20, 110, 200) ;
+}
+
+
+
+.messagebox{
+    margin: 1% auto;
+    width: 95%;
+    height: 75%;
+    overflow: auto;
+    background-color: rgb(8, 8, 8,0.3) ;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
+
+.receive{
+   
+    margin-left: 20px;
+    margin-bottom: 12px;
+   
+    font-size: 15px;
+    padding: 5px;
+    max-width: 40%;
+    word-wrap: break-word;
+    height: fit-content;
+    color: black;
+    background-color: white;
+}
+.receivedark{
+    color: white;
+    background-color: black;
+}
+
+.you{
+    margin-right: 20px;
+    margin-left: 58%;
+    margin-bottom: 12px;
+    color:white;
+    background-color:rgb(20, 110, 200) ;
+    font-size: 15px;
+    padding: 5px;
+    max-width: 40%;
+    word-wrap: break-word;
+    height: fit-content;
+}
+.youdark{
+    color: white;
+    background-color: brown;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   margin-left: 2.5%;
+   margin-bottom:4% ;
+   
+}
+
+.input>input{
+    width: 55%;
+    height: 30px;
+    
+    
+    margin-right: 5px;
+    background-color: rgb(8, 8, 8,0.6) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.userlist{
+    margin-left: 2.5%;
+    color: white;
+    margin-top: 10%;
+    width: 95%;
+    
+    
+}
+
+h3{
+    font-size: 20px;
+   
+    padding-bottom: 5%;
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+.userlist>p{
+    
+    background-color: whitesmoke;
+    width: fit-content;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    padding: 10px 3%;
+    
+}
+
+#name{
+    position: relative;
+    left: 2.5%;
+    background-color:rgb(20, 110, 200) ;
+    width: fit-content;
+    color:white;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    padding: 10px 3%;
+}
+
+.listpic{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.delete{
+    margin-left: 20px;
+    margin-bottom: 12px;
+    color:rgb(234, 230, 230,0.5);
+    background-color: transparent;
+    border:solid rgb(234, 230, 230,0.5) 2px;
+    font-size: 15px;
+    padding: 5px;
+    max-width: 40%;
+    word-wrap: break-word;
+    height: fit-content;
+}
+
+.deletelocal{
+    margin-right: 20px;
+    margin-left: 58%;
+    margin-bottom: 12px;
+    color:rgb(234, 230, 230,0.5);
+    background-color:transparent ;
+    border: solid 2px rgb(234, 230, 230,0.5);
+    font-size: 15px;
+    padding: 5px;
+    max-width: 40%;
+    word-wrap: break-word;
+    height: fit-content;
+}
+
+.available{
+    width: 75%;
+    height: 40px;
+    background-color: rgb(14, 14, 14,0.6);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: black;
+    margin-bottom: 4%;
+}
+
+span{
+   
+    width: 40%;
+    display: flex;
+    margin-bottom: 4%;
+
+}
+
+
+.join{
+    width: 25%;
+    height: 40px;
+ border: none;
+ background-color:rgb(20, 110, 200) ;
+ color: white;  
+}
+.joindark{
+    background-color:brown ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

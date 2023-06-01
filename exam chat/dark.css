@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.darkmode{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.dark{
+    background-color:rgb(250, 245, 245,0.8);
+    width: fit-content;
+    display: flex;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.ball{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.moon{
+    margin-right: 4px;
+}
+
+.inputdark:checked + .dark .ball {
+    transform: translateX(34.5px);
+    
+}
+
+.inputdark{
+    display: none;
+}
+
+

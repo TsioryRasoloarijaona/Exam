@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    width: 50%;
+    height: 55%;
+    margin: 8% auto;
+
+}.loginremove{display: none;}
+
+
+.default{
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-top: 3%;
+   }
+
+.choose{
+    position: relative;
+    left: -8%;
+     width: 5%;
+    height: 5%;
+}
+
+#inputfile{
+    display: none;
+}
+
+.typename{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.username{
+    width: 40%;
+    height: 27px;
+    margin-bottom:3% ;
+    text-align: center;
+    padding: 1% 0;
+    background-color: rgb(14, 14, 14,0.6);;
+    border: none;
+    color: white;
+}
+
+.submit{
+    margin: auto;
+    font-size: 20px;
+    padding: 2% 5%;
+    background-color: rgb(20, 110, 200);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.submitdark{
+    background-color: brown;
+}
+
