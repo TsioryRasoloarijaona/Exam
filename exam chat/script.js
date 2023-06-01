@@ -117,7 +117,7 @@ socket.on("user-join", (user) => {
    ${user} has joined the chat`;
     messagebox.appendChild(p);
 
-    userlist.innerHTML += user
+    userlist.innerHTML += `<p class = "list">${user}</p>`
 
 })
 
@@ -130,18 +130,18 @@ function send() {
     socket.emit("msg", message.value);
 
     const local = document.createElement("p");
-    local.classList.add("you");
+    local.classList.toggle("you");
     local.innerText = `${username.value} ${time()}
     ${message.value}`;
     messagebox.appendChild(local);
-
+    
     local.addEventListener('click', () => {
         socket.emit("delete", local.innerText)
 
         local.classList.remove("you");
 
         local.classList.add("deletelocal");
-        local.innerText = `${msg.user} ${time()}
+        local.innerText = `${username.value} ${time()}
         deleted message`
 
 
@@ -175,29 +175,25 @@ socket.on("sendmsg", (data) => {
 
 
 
-socket.on("list", (data) => {
-    userlist.innerHTML += `<p class ="list">${data.user}</p>`
-    
-
+/*socket.on("list", (data) => {
+    userlist.innerHTML += `<p class = "list">${data.user}</p>`
     scroll(messagebox);
-})
+})*/
 
 function leave(){
-
-    
     room.value ='';
     username.value='',
     window.location.reload() ;
-
-       
 }
 
 socket.on('leave', data=>{
     messagebox.innerHTML += `<p class = "receive">${time()}<br>${data.user} left the chat`;
+
     let list = document.querySelector(".list");
     
     if(list.innerText == data.user){
-        list.innerText ='';
+        list.innerHTML ='';
+        list.classList.remove('list');
     }
 
 })

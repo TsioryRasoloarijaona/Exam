@@ -46,10 +46,7 @@ io.on('connection', (socket) => {
         })
 
         socket.on("disconnect", () => {
-            socket.broadcast.to(room).emit('leave', {
-                user: userlist[socket.id]
-            })
-
+            socket.broadcast.to(room).emit('leave',  {user:userlist[socket.id]})
             delete userlist[socket.id];
             console.table(userlist)
         })

@@ -6,7 +6,7 @@ body{
 .login{
     width: 50%;
     height: 55%;
-    margin: 8% auto;
+    margin: 2% auto;
 
 }.loginremove{display: none;}
 
@@ -59,6 +59,6 @@ body{
     border-radius: 5px;
 }
 .submitdark{
-    background-color: brown;
+    background-color: rgb(67, 6, 6);
 }
 

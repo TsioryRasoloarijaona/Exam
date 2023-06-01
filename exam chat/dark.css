@@ -4,8 +4,9 @@ body{
 }
 
 .darkmode{
-    margin-left: 1%;
-    margin-top: 1%;
+    margin-left: 0.3%;
+    margin-top: 0.3%;
+  
 }
 
 .dark{
@@ -14,6 +15,7 @@ body{
     display: flex;
     padding: 4px;
     border-radius: 20px;
+    
 }
 
 .ball{
@@ -35,7 +37,8 @@ body{
 }
 
 .inputdark{
-    display: none;
+    visibility: hidden;
+    position: absolute;
 }
 
 
