@@ -74,10 +74,10 @@ function submit() {
        return alert("put a username")
     }
 
-   /* if(room.value[0]=='@'){
-        let private = room.value.replace('@','')
-        socket.emit('private',private)
-    }*/
+    if(room.value[0]=='@'){
+        let mp = room.value.replace('@','')
+        socket.emit('private',(mp))
+    }
 
     //socket.emit('newroom', room.value)
 
@@ -173,6 +173,14 @@ socket.on("sendmsg", (data) => {
     scroll(messagebox);
 })
 
+socket.on('msgprivate',(data)=>{
+    var send = document.createElement("p");
+    send.classList.add("receive");
+    send.innerText = `${time()}
+    ${data}`
+    messagebox.appendChild(send);
+})
+
 
 
 /*socket.on("list", (data) => {
@@ -197,6 +205,8 @@ socket.on('leave', data=>{
     }
 
 })
+
+
  
 
 /*socket.on('newroom' , (room)=>{
